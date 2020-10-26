@@ -1,0 +1,12 @@
+n=int(input())          
+l=list(map(int,input().split()))
+total,win_size=list(map(int,input().split()))
+start=0
+last=win_size-1
+c=0
+while(last<n):
+    if(total==sum(l[start:last+1])):
+        c+=1
+    start+=1
+    last+=1
+print(c)
