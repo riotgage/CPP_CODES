@@ -1,6 +1,17 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "optional": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp",
+        "istream": "cpp",
+        "numeric": "cpp",
+        "streambuf": "cpp",
+        "regex": "cpp",
+        "type_traits": "cpp",
+        "valarray": "cpp"
     },
     "competitive-programming-helper.firstTime": false
 }
