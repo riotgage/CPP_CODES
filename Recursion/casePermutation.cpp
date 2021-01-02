@@ -16,6 +16,7 @@ void generateSubsets(string ip,string op){
     else ip=" ";
     
     generateSubsets(ip,op1);  
+    generateSubsets(ip,op);  
     generateSubsets(ip,op2);
 }
 void generate(string s){
