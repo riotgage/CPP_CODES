@@ -1,4 +1,4 @@
-// Given a stack deleta, reverse it
+// Given a stack reverse it
 
 #include<bits/stdc++.h>
 using namespace std;

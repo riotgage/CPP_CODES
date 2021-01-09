@@ -1,3 +1,5 @@
+// Given a stack , sort it.
+
 #include<bits/stdc++.h>
 using namespace std;
 void sorting(stack<int>&s){

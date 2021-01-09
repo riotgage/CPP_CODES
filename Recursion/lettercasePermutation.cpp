@@ -8,22 +8,18 @@ void generateSubsets(string ip,string op){
     string op1=op;
     string op2=op;
     char c=ip[0];
+    if(ip.size()>1)
+            ip=ip.substr(1);
+        else ip=" ";
     if(isalpha(c)){
         op2+=tolower(c);
         op1+=toupper(c);   
-        if(ip.size()>1)
-            ip=ip.substr(1);
-        else ip=" ";
-                generateSubsets(ip,op2);    
-
+        
+        generateSubsets(ip,op2);    
         generateSubsets(ip,op1);  
     }
     else{
-        op2+=c;
-        if(ip.size()>1)
-            ip=ip.substr(1);
-        else ip=" ";
-        generateSubsets(ip,op2);    
+        generateSubsets(ip,op+c);    
     }
     
 }
@@ -32,6 +28,6 @@ void generate(string s){
     generateSubsets(s,op);
 }
 int main(){
-    string s="a1b2C";
+    string s="ab2C";
     generate(s);
 }

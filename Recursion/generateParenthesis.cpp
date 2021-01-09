@@ -1,3 +1,5 @@
+// Generate all balanced paranthesis
+
 #include<bits/stdc++.h>
 using namespace std;
 
